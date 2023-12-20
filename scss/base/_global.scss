@@ -1,0 +1,11 @@
+@import './font';
+@import './variables';
+body {
+  margin: 0;
+  font: $base-font;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+@import './typography';
