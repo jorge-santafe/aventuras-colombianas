@@ -1,0 +1,21 @@
+@media (width> 990px) {
+  .navbar {
+    .nav-link:before {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      block-size: 2px;
+      left: 50%;
+      width: 0;
+      transform: translateX(-50%);
+      background: currentColor;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::before {
+      width: 90%;
+    }
+    .nav-link.active:hover::before {
+      width: 0;
+    }
+  }
+}
