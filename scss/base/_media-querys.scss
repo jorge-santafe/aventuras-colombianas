@@ -33,6 +33,15 @@
       }
     }
   }
+  .regions {
+    &-items:nth-child(1) {
+      grid-column: 1/2;
+      grid-row: 1/3;
+    }
+    span {
+      font: $headline-2;
+    }
+  }
 }
 @media (width> 990px) {
   .navbar {

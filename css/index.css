@@ -76,7 +76,7 @@ p {
   box-shadow: none;
 }
 
-.categories-travel::before, .hero::before {
+.regions-items::before, .categories-travel::before, .hero::before {
   content: "";
   display: block;
   position: absolute;
@@ -242,6 +242,47 @@ p {
   block-size: 3.125rem;
 }
 
+.regions-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 12.5rem;
+  margin-block: 2rem;
+}
+.regions-items {
+  display: block;
+  position: relative;
+  display: grid;
+  place-content: center;
+}
+.regions-items:nth-child(1) {
+  grid-column: 1/-1;
+}
+.regions-items::before {
+  filter: brightness(0.5);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.6rem;
+}
+.regions-items:hover::before {
+  filter: brightness(0.4);
+}
+.regions-items.andes::before {
+  background-image: url("../../images/salento.jpg");
+}
+.regions-items.llanos::before {
+  background-image: url("../../images/llanos.jpg");
+}
+.regions-items.pacifico::before {
+  background-image: url("../../images/pacifico.jpg");
+}
+.regions-items span {
+  position: relative;
+  color: #ffffff;
+  font: 600 1.5rem/normal "Montserrat", sans-serif;
+}
+
 @media (width > 768px) {
   .hero {
     block-size: 37.5rem;
@@ -274,6 +315,13 @@ p {
   }
   .benefits-card-info {
     font: 300 1rem/normal "Montserrat", sans-serif;
+  }
+  .regions-items:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .regions span {
+    font: 600 2.25rem/normal "Montserrat", sans-serif;
   }
 }
 @media (width > 990px) {

@@ -1,0 +1,48 @@
+.regions {
+  &-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 12.5rem;
+    margin-block: 2rem;
+  }
+  &-items {
+    display: block;
+    position: relative;
+    display: grid;
+    place-content: center;
+    &:nth-child(1) {
+      grid-column: 1/-1;
+    }
+    &::before {
+      @extend %overlay;
+      @include brightnes(0.5);
+      @include backgroung-image-settings-default;
+      border-radius: 0.6rem;
+    }
+    &:hover::before {
+      @include brightnes(0.4);
+    }
+    // Background Images Scroll
+    &.andes {
+      &::before {
+        background-image: url('../../images/salento.jpg');
+      }
+    }
+    &.llanos {
+      &::before {
+        background-image: url('../../images/llanos.jpg');
+      }
+    }
+    &.pacifico {
+      &::before {
+        background-image: url('../../images/pacifico.jpg');
+      }
+    }
+    span {
+      position: relative;
+      color: $white;
+      font: $headline-3;
+    }
+  }
+}
