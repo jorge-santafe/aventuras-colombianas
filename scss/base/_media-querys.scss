@@ -19,6 +19,20 @@
   p {
     font: $font-lg;
   }
+  .benefits {
+    &-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &-card {
+      flex-direction: row;
+      &-title {
+        font: $headline-3;
+      }
+      &-info {
+        font: $base-font;
+      }
+    }
+  }
 }
 @media (width> 990px) {
   .navbar {
