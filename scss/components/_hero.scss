@@ -1,0 +1,50 @@
+@import '../animations/overlay';
+.hero {
+  block-size: 23.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &::before {
+    background: url('../../images/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    @extend %overlay;
+    @include brightnes(0.6);
+  }
+  &-description {
+    position: relative;
+    color: var(--white);
+    padding-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-inline-size: 25rem;
+    block-size: 100%;
+    text-align: center;
+  }
+  &-headline1 {
+    font: $headline-3;
+    font-weight: bold;
+    color: $white;
+    line-height: 1.4;
+  }
+  &-know-more {
+    color: $white;
+    font: $base-font-bold;
+    line-height: 24px;
+    border: 1px solid $white;
+    inline-size: 11.25rem;
+    text-align: center;
+    padding-block: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    &:hover {
+      background-color: $white;
+      color: $primary;
+      transition: 0.3s;
+    }
+  }
+}
