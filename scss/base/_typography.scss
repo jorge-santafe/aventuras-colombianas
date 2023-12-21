@@ -4,7 +4,7 @@
   margin: 0;
 }
 .headline2 {
-  font: $headline-2;
+  font: $headline-3;
   color: $primary;
   text-align: center;
   margin-block-start: 0;
@@ -15,4 +15,5 @@
 }
 p {
   font: $base-font;
+  color: $gray20;
 }

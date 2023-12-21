@@ -1,0 +1,77 @@
+@import '../animations/scroll';
+.categories {
+  margin-block: 2rem;
+  .headline2 {
+    margin-block-start: 0;
+    margin-block-end: 1.5rem;
+  }
+  &-description {
+    text-align: center;
+    margin-block-end: 1.5rem;
+  }
+  &-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-block-end: 0.75rem;
+    overflow-x: scroll;
+    @extend %scroll;
+  }
+  &-travel {
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    inline-size: 11.8125rem;
+    block-size: 8.1875rem;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    &::before {
+      @extend %overlay;
+      @include brightnes(0.6);
+      @include backgroung-image-settings-default;
+    }
+    &:hover::before {
+      @include brightnes(0.4);
+    }
+    // Background Images Scroll
+    &.adventure {
+      &::before {
+        background-image: url('../../images/aventura.jpg');
+      }
+    }
+    &.art {
+      &::before {
+        background-image: url('../../images/arte.jpg');
+      }
+    }
+    &.hiking {
+      &::before {
+        background-image: url('../../images/senderismo.jpg');
+      }
+    }
+    &.beach {
+      &::before {
+        background-image: url('../../images/playa.jpg');
+      }
+    }
+    &.agrotourism {
+      &::before {
+        background-image: url('../../images/agroturismo.jpg');
+      }
+    }
+    &.family {
+      &::before {
+        background-image: url('../../images/familiar.jpg');
+      }
+    }
+  }
+
+  &-travel-title {
+    position: relative;
+    color: $white;
+    font: $headline-3;
+  }
+}

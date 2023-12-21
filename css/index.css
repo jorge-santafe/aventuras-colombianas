@@ -17,7 +17,7 @@ a {
 }
 
 .headline2 {
-  font: 600 2.25rem/normal "Montserrat", sans-serif;
+  font: 600 1.5rem/normal "Montserrat", sans-serif;
   color: #191e3b;
   text-align: center;
   margin-block-start: 0;
@@ -30,6 +30,7 @@ a {
 
 p {
   font: 300 1rem/normal "Montserrat", sans-serif;
+  color: #757787;
 }
 
 .header {
@@ -75,7 +76,7 @@ p {
   box-shadow: none;
 }
 
-.hero::before {
+.categories-travel::before, .hero::before {
   content: "";
   display: block;
   position: absolute;
@@ -134,6 +135,81 @@ p {
   transition: 0.3s;
 }
 
+.categories-container::-webkit-scrollbar {
+  inline-size: 6px;
+  block-size: 6px;
+}
+.categories-container::-webkit-scrollbar-thumb {
+  background: #757787;
+  border-radius: 0.5rem;
+}
+.categories-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.categories {
+  margin-block: 2rem;
+}
+.categories .headline2 {
+  margin-block-start: 0;
+  margin-block-end: 1.5rem;
+}
+.categories-description {
+  text-align: center;
+  margin-block-end: 1.5rem;
+}
+.categories-container {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding-block-end: 0.75rem;
+  overflow-x: scroll;
+}
+.categories-travel {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  inline-size: 11.8125rem;
+  block-size: 8.1875rem;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.categories-travel::before {
+  filter: brightness(0.6);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.categories-travel:hover::before {
+  filter: brightness(0.4);
+}
+.categories-travel.adventure::before {
+  background-image: url("../../images/aventura.jpg");
+}
+.categories-travel.art::before {
+  background-image: url("../../images/arte.jpg");
+}
+.categories-travel.hiking::before {
+  background-image: url("../../images/senderismo.jpg");
+}
+.categories-travel.beach::before {
+  background-image: url("../../images/playa.jpg");
+}
+.categories-travel.agrotourism::before {
+  background-image: url("../../images/agroturismo.jpg");
+}
+.categories-travel.family::before {
+  background-image: url("../../images/familiar.jpg");
+}
+.categories-travel-title {
+  position: relative;
+  color: #ffffff;
+  font: 600 1.5rem/normal "Montserrat", sans-serif;
+}
+
 @media (width > 768px) {
   .hero {
     block-size: 37.5rem;
@@ -148,6 +224,12 @@ p {
     font: 800 3rem/normal "Montserrat", sans-serif;
     line-height: 1.4;
     text-align: start;
+  }
+  .headline2 {
+    font: 600 2.25rem/normal "Montserrat", sans-serif;
+  }
+  p {
+    font: 300 1.5rem/normal "Montserrat", sans-serif;
   }
 }
 @media (width > 990px) {

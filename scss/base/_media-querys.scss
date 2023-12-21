@@ -13,6 +13,12 @@
       text-align: start;
     }
   }
+  .headline2 {
+    font: $headline-2;
+  }
+  p {
+    font: $font-lg;
+  }
 }
 @media (width> 990px) {
   .navbar {
