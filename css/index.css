@@ -330,6 +330,23 @@ p {
   vertical-align: middle;
 }
 
+.footer {
+  padding-block: 2rem;
+  background: #191e3b;
+  color: #ffffff;
+}
+.footer-title {
+  color: #ffffff;
+}
+.footer-social-media {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.footer-social-media i {
+  font-size: 2rem;
+}
+
 @media (width > 768px) {
   .hero {
     block-size: 37.5rem;
