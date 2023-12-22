@@ -1,0 +1,11 @@
+.contact {
+  margin-block: 2rem;
+  &-info {
+    text-align: center;
+  }
+  &-email {
+    color: $primary;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+}
