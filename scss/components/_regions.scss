@@ -26,17 +26,17 @@
     // Background Images Scroll
     &.andes {
       &::before {
-        background-image: url('../../images/salento.jpg');
+        background-image: url('../images/salento.jpg');
       }
     }
     &.llanos {
       &::before {
-        background-image: url('../../images/llanos.jpg');
+        background-image: url('../images/llanos.jpg');
       }
     }
     &.pacifico {
       &::before {
-        background-image: url('../../images/pacifico.jpg');
+        background-image: url('../images/pacifico.jpg');
       }
     }
     span {

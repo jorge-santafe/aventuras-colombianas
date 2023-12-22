@@ -94,7 +94,7 @@ p {
   position: relative;
 }
 .hero::before {
-  background: url("../../images/hero.jpg");
+  background-image: url("../images/hero.webp");
   background-position: center;
   background-size: cover;
   filter: brightness(0.6);
@@ -187,22 +187,22 @@ p {
   filter: brightness(0.4);
 }
 .categories-travel.adventure::before {
-  background-image: url("../../images/aventura.jpg");
+  background-image: url("../images/aventura.jpg");
 }
 .categories-travel.art::before {
-  background-image: url("../../images/arte.jpg");
+  background-image: url("../images/arte.jpg");
 }
 .categories-travel.hiking::before {
-  background-image: url("../../images/senderismo.jpg");
+  background-image: url("../images/senderismo.webp");
 }
 .categories-travel.beach::before {
-  background-image: url("../../images/playa.jpg");
+  background-image: url("../images/playa.webp");
 }
 .categories-travel.agrotourism::before {
-  background-image: url("../../images/agroturismo.jpg");
+  background-image: url("../images/agroturismo.jpg");
 }
 .categories-travel.family::before {
-  background-image: url("../../images/familiar.jpg");
+  background-image: url("../images/familiar.webp");
 }
 .categories-travel-title {
   position: relative;
@@ -269,13 +269,13 @@ p {
   filter: brightness(0.4);
 }
 .regions-items.andes::before {
-  background-image: url("../../images/salento.jpg");
+  background-image: url("../images/salento.jpg");
 }
 .regions-items.llanos::before {
-  background-image: url("../../images/llanos.jpg");
+  background-image: url("../images/llanos.jpg");
 }
 .regions-items.pacifico::before {
-  background-image: url("../../images/pacifico.jpg");
+  background-image: url("../images/pacifico.jpg");
 }
 .regions-items span {
   position: relative;

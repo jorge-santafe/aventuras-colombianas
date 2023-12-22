@@ -39,32 +39,32 @@
     // Background Images Scroll
     &.adventure {
       &::before {
-        background-image: url('../../images/aventura.jpg');
+        background-image: url('../images/aventura.jpg');
       }
     }
     &.art {
       &::before {
-        background-image: url('../../images/arte.jpg');
+        background-image: url('../images/arte.jpg');
       }
     }
     &.hiking {
       &::before {
-        background-image: url('../../images/senderismo.jpg');
+        background-image: url('../images/senderismo.webp');
       }
     }
     &.beach {
       &::before {
-        background-image: url('../../images/playa.jpg');
+        background-image: url('../images/playa.webp');
       }
     }
     &.agrotourism {
       &::before {
-        background-image: url('../../images/agroturismo.jpg');
+        background-image: url('../images/agroturismo.jpg');
       }
     }
     &.family {
       &::before {
-        background-image: url('../../images/familiar.jpg');
+        background-image: url('../images/familiar.webp');
       }
     }
   }

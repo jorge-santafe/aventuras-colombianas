@@ -6,7 +6,7 @@
   align-items: center;
   position: relative;
   &::before {
-    background: url('../../images/hero.jpg');
+    background-image: url('../images/hero.webp');
     background-position: center;
     background-size: cover;
     @extend %overlay;
