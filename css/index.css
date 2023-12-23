@@ -389,7 +389,7 @@ p {
   gap: 1rem;
 }
 .filter-categories-menu-item {
-  font: 300 0.875rem/normal "Montserrat", sans-serif;
+  font: 400 0.75rem/1.125rem "Montserrat", sans-serif;
   color: #757787;
 }
 .filter-categories-menu label {
@@ -410,8 +410,7 @@ p {
 .filter-price {
   display: grid;
   gap: 1.5rem;
-  outline: 1px solid red;
-  font: 300 0.875rem/normal "Montserrat", sans-serif;
+  font: 400 0.75rem/1.125rem "Montserrat", sans-serif;
   color: #757787;
 }
 .filter-price-range {
@@ -423,13 +422,41 @@ p {
   display: flex;
   gap: 0.25rem;
   justify-content: space-between;
+  align-items: center;
 }
 .filter-price-label input {
-  outline: 1px solid red;
   inline-size: 55%;
+  background: #f5f5f5;
+  color: #757787;
+  border: none;
+  border-radius: 0.25rem;
+  padding-inline: 0.5rem;
+  padding-block: 0.25rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.filter-date {
+  font: 400 0.75rem/1.125rem "Montserrat", sans-serif;
+  color: #757787;
+  display: grid;
+  gap: 1.5rem;
+}
+.filter-date label {
+  display: flex;
+  justify-content: space-between;
+}
+.filter-date label input {
+  inline-size: 55%;
+  outline: none;
+  color: #757787;
   background: #f5f5f5;
   border: none;
   border-radius: 0.25rem;
+  padding-inline: 0.5rem;
+  padding-block: 0.25rem;
+  outline: none;
+  box-sizing: border-box;
 }
 
 @media (width > 768px) {

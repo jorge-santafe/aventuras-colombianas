@@ -22,7 +22,7 @@
   flex-direction: column;
   gap: 1rem;
   &-item {
-    font: $font-sm;
+    font: $font-xs;
     color: $gray20;
   }
   label {
@@ -44,8 +44,7 @@
 .filter-price {
   display: grid;
   gap: 1.5rem;
-  outline: 1px solid red;
-  font: $font-sm;
+  font: $font-xs;
   color: $gray20;
   &-range {
     display: flex;
@@ -56,13 +55,40 @@
     display: flex;
     gap: 0.25rem;
     justify-content: space-between;
-
+    align-items: center;
     input {
-      outline: 1px solid red;
       inline-size: 55%;
+      background: $grayInput;
+      color: $gray20;
+      border: none;
+      border-radius: 0.25rem;
+      padding-inline: 0.5rem;
+      padding-block: 0.25rem;
+      outline: none;
+      box-sizing: border-box;
+    }
+  }
+}
+//Filter Date
+.filter-date {
+  font: $font-xs;
+  color: $gray20;
+  display: grid;
+  gap: 1.5rem;
+  label {
+    display: flex;
+    justify-content: space-between;
+    input {
+      inline-size: 55%;
+      outline: none;
+      color: $gray20;
       background: $grayInput;
       border: none;
       border-radius: 0.25rem;
+      padding-inline: 0.5rem;
+      padding-block: 0.25rem;
+      outline: none;
+      box-sizing: border-box;
     }
   }
 }
