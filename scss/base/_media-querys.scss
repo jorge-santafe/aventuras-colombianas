@@ -42,6 +42,19 @@
       font: $headline-2;
     }
   }
+  //Nuestros Viajes
+  .grid-page {
+    gap: 0.5rem;
+    grid-template-columns: 16.25rem 1fr;
+    grid-template-rows: auto;
+    &.container {
+      max-inline-size: 82.5rem;
+      margin: 0 auto;
+    }
+    .aside {
+      display: block;
+    }
+  }
 }
 @media (width> 990px) {
   .navbar {

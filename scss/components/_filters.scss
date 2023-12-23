@@ -1,0 +1,68 @@
+// Component General
+.filters {
+  &-title {
+    margin-block-start: 1rem;
+    margin-block-end: 1.5rem;
+    color: $gray20;
+    font: $base-font-bold;
+  }
+  &-section {
+    padding-block-end: 1.5rem;
+    margin-block-end: 1.5rem;
+    border-block-end: 1px solid $gray10;
+  }
+  &-subtitle {
+    color: $gray20;
+    font: $base-font-bold;
+  }
+}
+// Filter Categories menu
+.filter-categories-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  &-item {
+    font: $font-sm;
+    color: $gray20;
+  }
+  label {
+    padding-inline-start: 0.25rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    &:hover .filter-categories-menu-item {
+      text-decoration: underline;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+  }
+  input[type='checkbox'] {
+    margin: 0;
+  }
+}
+// Filter Price
+.filter-price {
+  display: grid;
+  gap: 1.5rem;
+  outline: 1px solid red;
+  font: $font-sm;
+  color: $gray20;
+  &-range {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  &-label {
+    display: flex;
+    gap: 0.25rem;
+    justify-content: space-between;
+
+    input {
+      outline: 1px solid red;
+      inline-size: 55%;
+      background: $grayInput;
+      border: none;
+      border-radius: 0.25rem;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.grid-page {
+  block-size: calc(100vh - 64px);
+  display: grid;
+  outline: 1px solid $gray10;
+  &.container {
+    max-inline-size: 100%;
+    margin: 0;
+  }
+  .aside {
+    display: none;
+    position: sticky;
+    top: 4rem;
+    border-inline-end: 1px solid $gray10;
+    padding-inline-end: 0.6875rem;
+  }
+  .main {
+    overflow: auto;
+  }
+}

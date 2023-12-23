@@ -347,6 +347,91 @@ p {
   font-size: 2rem;
 }
 
+.grid-page {
+  block-size: calc(100vh - 64px);
+  display: grid;
+  outline: 1px solid #f1f5f9;
+}
+.grid-page.container {
+  max-inline-size: 100%;
+  margin: 0;
+}
+.grid-page .aside {
+  display: none;
+  position: sticky;
+  top: 4rem;
+  border-inline-end: 1px solid #f1f5f9;
+  padding-inline-end: 0.6875rem;
+}
+.grid-page .main {
+  overflow: auto;
+}
+
+.filters-title {
+  margin-block-start: 1rem;
+  margin-block-end: 1.5rem;
+  color: #757787;
+  font: 600 1rem/normal "Montserrat", sans-serif;
+}
+.filters-section {
+  padding-block-end: 1.5rem;
+  margin-block-end: 1.5rem;
+  border-block-end: 1px solid #f1f5f9;
+}
+.filters-subtitle {
+  color: #757787;
+  font: 600 1rem/normal "Montserrat", sans-serif;
+}
+
+.filter-categories-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.filter-categories-menu-item {
+  font: 300 0.875rem/normal "Montserrat", sans-serif;
+  color: #757787;
+}
+.filter-categories-menu label {
+  padding-inline-start: 0.25rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.filter-categories-menu label:hover .filter-categories-menu-item {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.filter-categories-menu input[type=checkbox] {
+  margin: 0;
+}
+
+.filter-price {
+  display: grid;
+  gap: 1.5rem;
+  outline: 1px solid red;
+  font: 300 0.875rem/normal "Montserrat", sans-serif;
+  color: #757787;
+}
+.filter-price-range {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.filter-price-label {
+  display: flex;
+  gap: 0.25rem;
+  justify-content: space-between;
+}
+.filter-price-label input {
+  outline: 1px solid red;
+  inline-size: 55%;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 0.25rem;
+}
+
 @media (width > 768px) {
   .hero {
     block-size: 37.5rem;
@@ -386,6 +471,18 @@ p {
   }
   .regions span {
     font: 600 2.25rem/normal "Montserrat", sans-serif;
+  }
+  .grid-page {
+    gap: 0.5rem;
+    grid-template-columns: 16.25rem 1fr;
+    grid-template-rows: auto;
+  }
+  .grid-page.container {
+    max-inline-size: 82.5rem;
+    margin: 0 auto;
+  }
+  .grid-page .aside {
+    display: block;
   }
 }
 @media (width > 990px) {
