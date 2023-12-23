@@ -459,6 +459,67 @@ p {
   box-sizing: border-box;
 }
 
+.carousel-promo {
+  margin-block-start: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.grid-page .main::-webkit-scrollbar {
+  inline-size: 0px;
+}
+
+.our-trip {
+  margin-block: 1.5rem;
+}
+.our-trip-grid {
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.our-trip-card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  outline: 1px solid #f1f5f9;
+  box-shadow: 0px 2px 2px 0px rgba(196, 196, 196, 0.25);
+}
+.our-trip-card img {
+  inline-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  block-size: 11.625rem;
+}
+.our-trip-card:hover .our-trip-title {
+  -webkit-text-decoration: underline 1px solid #757787;
+          text-decoration: underline 1px solid #757787;
+  transition: 0.3s delay;
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+.our-trip-info {
+  padding-inline: 0.5rem;
+}
+.our-trip-category {
+  font: 400 0.75rem/1.125rem "Montserrat", sans-serif;
+  color: #757787;
+  background: #f1f5f9;
+  padding: 0.25rem;
+  margin-block: 0.5rem;
+  display: inline-block;
+  border-radius: 0.25rem;
+}
+.our-trip-title {
+  font: 300 1.5rem/normal "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #191e3b;
+  display: block;
+  margin-block-end: 0.25rem;
+}
+.our-trip-description {
+  font: 300 0.875rem/normal "Montserrat", sans-serif;
+}
+
 @media (width > 768px) {
   .hero {
     block-size: 37.5rem;
