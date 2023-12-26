@@ -1,0 +1,23 @@
+.hero-travel-guide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-block-size: 600px;
+  &-video {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    max-block-size: 600px;
+    filter: brightness(0.5);
+  }
+  &-description {
+    max-inline-size: 800px;
+    position: absolute;
+  }
+  &-title {
+    color: $white;
+    font: $headline-3;
+    text-align: center;
+  }
+}

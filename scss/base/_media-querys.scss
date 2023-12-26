@@ -55,6 +55,12 @@
       display: block;
     }
   }
+  //Guia de viajes
+  .hero-travel-guide {
+    &-title {
+      font: $headline-1;
+    }
+  }
 }
 @media (width> 990px) {
   .navbar {

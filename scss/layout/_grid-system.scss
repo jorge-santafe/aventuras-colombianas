@@ -12,6 +12,8 @@
     top: 4rem;
     border-inline-end: 1px solid $gray10;
     padding-inline-end: 0.6875rem;
+    overflow-y: scroll;
+    @extend %scroll;
   }
   .main {
     overflow: auto;

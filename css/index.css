@@ -135,15 +135,15 @@ p {
   transition: 0.3s;
 }
 
-.categories-container::-webkit-scrollbar {
+.grid-page .aside::-webkit-scrollbar, .categories-container::-webkit-scrollbar {
   inline-size: 6px;
   block-size: 6px;
 }
-.categories-container::-webkit-scrollbar-thumb {
+.grid-page .aside::-webkit-scrollbar-thumb, .categories-container::-webkit-scrollbar-thumb {
   background: #757787;
   border-radius: 0.5rem;
 }
-.categories-container::-webkit-scrollbar-track {
+.grid-page .aside::-webkit-scrollbar-track, .categories-container::-webkit-scrollbar-track {
   background: transparent;
 }
 
@@ -362,6 +362,7 @@ p {
   top: 4rem;
   border-inline-end: 1px solid #f1f5f9;
   padding-inline-end: 0.6875rem;
+  overflow-y: scroll;
 }
 .grid-page .main {
   overflow: auto;
@@ -476,7 +477,7 @@ p {
   display: grid;
   gap: 1rem;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
 }
 .our-trip-card {
   border-radius: 0.5rem;
@@ -489,6 +490,9 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
   block-size: 11.625rem;
+}
+.our-trip-card:hover img {
+  filter: brightness(0.8);
 }
 .our-trip-card:hover .our-trip-title {
   -webkit-text-decoration: underline 1px solid #757787;
@@ -518,6 +522,31 @@ p {
 }
 .our-trip-description {
   font: 300 0.875rem/normal "Montserrat", sans-serif;
+}
+
+.hero-travel-guide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-block-size: 600px;
+}
+.hero-travel-guide-video {
+  inline-size: 100%;
+  block-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-block-size: 600px;
+  filter: brightness(0.5);
+}
+.hero-travel-guide-description {
+  max-inline-size: 800px;
+  position: absolute;
+}
+.hero-travel-guide-title {
+  color: #ffffff;
+  font: 600 1.5rem/normal "Montserrat", sans-serif;
+  text-align: center;
 }
 
 @media (width > 768px) {
@@ -571,6 +600,9 @@ p {
   }
   .grid-page .aside {
     display: block;
+  }
+  .hero-travel-guide-title {
+    font: 800 3rem/normal "Montserrat", sans-serif;
   }
 }
 @media (width > 990px) {
