@@ -651,6 +651,47 @@ p {
   text-align: justify;
 }
 
+.weather {
+  margin-block: 2rem;
+}
+.weather-info {
+  text-align: center;
+  margin-block-end: 1.5rem;
+}
+.weather-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  background-color: #191e3b;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-inline-size: 380px;
+  margin: auto;
+}
+.weather-image {
+  display: none;
+  background-image: url("../icons/colombia.webp");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.weather-description-title {
+  color: #ffffff;
+  font: 600 2.25rem/normal "Montserrat", sans-serif;
+  text-align: center;
+  margin-block-end: 1.5rem;
+}
+.weather-items {
+  color: #f1f5f9;
+}
+.weather-items li {
+  margin-block-end: 1rem;
+  text-align: justify;
+}
+.weather-items strong {
+  font-weight: 600;
+}
+
 @media (width > 768px) {
   .hero {
     block-size: 37.5rem;
@@ -718,6 +759,13 @@ p {
   .places-visit-card:nth-child(even) .places-visit-description {
     order: -1;
     text-align: end;
+  }
+  .weather-container {
+    grid-template-columns: 380px 1fr;
+    max-inline-size: 100%;
+  }
+  .weather-image {
+    display: block;
   }
 }
 @media (width > 990px) {

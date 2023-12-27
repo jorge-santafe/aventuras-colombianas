@@ -1,0 +1,40 @@
+.weather {
+  margin-block: 2rem;
+  &-info {
+    text-align: center;
+    margin-block-end: 1.5rem;
+  }
+  &-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    background-color: $primary;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    max-inline-size: 380px;
+    margin: auto;
+  }
+  &-image {
+    display: none;
+    background-image: url('../icons/colombia.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &-description-title {
+    color: $white;
+    font: $headline-2;
+    text-align: center;
+    margin-block-end: 1.5rem;
+  }
+  &-items {
+    color: $gray10;
+    li {
+      margin-block-end: 1rem;
+      text-align: justify;
+    }
+    strong {
+      font-weight: 600;
+    }
+  }
+}

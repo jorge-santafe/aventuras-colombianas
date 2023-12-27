@@ -76,6 +76,15 @@
       }
     }
   }
+  .weather {
+    &-container {
+      grid-template-columns: 380px 1fr;
+      max-inline-size: 100%;
+    }
+    &-image {
+      display: block;
+    }
+  }
 }
 @media (width> 990px) {
   .navbar {
