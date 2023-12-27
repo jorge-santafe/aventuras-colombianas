@@ -1,0 +1,33 @@
+@mixin layerscard($inline-size, $block-size) {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  .layer,
+  .sublayer {
+    inline-size: $inline-size;
+    block-size: $block-size;
+    border-radius: 0.5rem;
+  }
+  &:hover .layer {
+    transform: rotate(45deg);
+    transition: 0.4s;
+  }
+  &:hover .sublayer {
+    transform: rotate(0deg);
+    transition: 0.4s;
+    opacity: 0.3;
+  }
+}
+@mixin layer($value-color) {
+  position: absolute;
+  transform: rotate(0deg);
+  z-index: 1;
+  background-color: $value-color;
+  transition: 0.2s;
+}
+@mixin sublayer($value-sublayer) {
+  background-color: $value-sublayer;
+  transform: rotate(50deg);
+  opacity: 0;
+}

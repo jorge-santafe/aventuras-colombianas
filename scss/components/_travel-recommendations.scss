@@ -1,0 +1,41 @@
+@import '../animations/rotate';
+.travel-recommendations {
+  margin-block: 2rem;
+  .headline2 {
+    margin-block-end: 2rem;
+  }
+  &-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 120px));
+    justify-content: space-evenly;
+  }
+  &-info {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    .container-layer {
+      margin-block-end: 1rem;
+      @include layerscard(6.25rem, 6.25rem);
+      img {
+        position: absolute;
+        z-index: 2;
+      }
+    }
+    .layer {
+      @include layer($primary);
+    }
+    .sublayer {
+      @include sublayer($gray20);
+    }
+    &:hover .travel-recommendations-link {
+      text-decoration: underline;
+    }
+  }
+  &-link {
+    text-align: center;
+    font: $base-font;
+    color: $gray20;
+    margin-block-start: 0.5rem;
+  }
+}

@@ -542,11 +542,77 @@ p {
 .hero-travel-guide-description {
   max-inline-size: 800px;
   position: absolute;
+  padding-inline: 1rem;
 }
 .hero-travel-guide-title {
   color: #ffffff;
   font: 600 1.5rem/normal "Montserrat", sans-serif;
   text-align: center;
+}
+
+.travel-recommendations {
+  margin-block: 2rem;
+}
+.travel-recommendations .headline2 {
+  margin-block-end: 2rem;
+}
+.travel-recommendations-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 120px));
+  justify-content: space-evenly;
+}
+.travel-recommendations-info {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.travel-recommendations-info .container-layer {
+  margin-block-end: 1rem;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.travel-recommendations-info .container-layer .layer,
+.travel-recommendations-info .container-layer .sublayer {
+  inline-size: 6.25rem;
+  block-size: 6.25rem;
+  border-radius: 0.5rem;
+}
+.travel-recommendations-info .container-layer:hover .layer {
+  transform: rotate(45deg);
+  transition: 0.4s;
+}
+.travel-recommendations-info .container-layer:hover .sublayer {
+  transform: rotate(0deg);
+  transition: 0.4s;
+  opacity: 0.3;
+}
+.travel-recommendations-info .container-layer img {
+  position: absolute;
+  z-index: 2;
+}
+.travel-recommendations-info .layer {
+  position: absolute;
+  transform: rotate(0deg);
+  z-index: 1;
+  background-color: #191e3b;
+  transition: 0.2s;
+}
+.travel-recommendations-info .sublayer {
+  background-color: #757787;
+  transform: rotate(50deg);
+  opacity: 0;
+}
+.travel-recommendations-info:hover .travel-recommendations-link {
+  text-decoration: underline;
+}
+.travel-recommendations-link {
+  text-align: center;
+  font: 300 1rem/normal "Montserrat", sans-serif;
+  color: #757787;
+  margin-block-start: 0.5rem;
 }
 
 @media (width > 768px) {
