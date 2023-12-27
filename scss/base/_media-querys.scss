@@ -61,6 +61,21 @@
       font: $headline-1;
     }
   }
+  .places-visit {
+    &-card {
+      max-inline-size: 100%;
+      flex-direction: row;
+      gap: 0.5rem;
+      img {
+        inline-size: 150px;
+        block-size: auto;
+      }
+      &:nth-child(even) .places-visit-description {
+        order: -1;
+        text-align: end;
+      }
+    }
+  }
 }
 @media (width> 990px) {
   .navbar {
@@ -80,6 +95,17 @@
     }
     .nav-link.active:hover::before {
       width: 0;
+    }
+  }
+  .places-visit {
+    &-card {
+      &:nth-child(even) .places-visit-description {
+        order: 1;
+        text-align: justify;
+      }
+    }
+    &-container {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

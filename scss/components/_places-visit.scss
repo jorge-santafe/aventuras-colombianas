@@ -1,0 +1,36 @@
+.places-visit {
+  &-info {
+    text-align: center;
+    margin-block-end: 2rem;
+  }
+  &-container {
+    display: grid;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  &-card {
+    max-inline-size: 380px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: $gray10;
+    img {
+      block-size: 200px;
+      object-fit: cover;
+    }
+  }
+  &-description {
+    padding: 0.5rem;
+    flex: 1;
+    h3 {
+      font: $headline-3;
+      color: $primary;
+      margin-block-start: 0;
+    }
+    p {
+      font: $base-font;
+      text-align: justify;
+    }
+  }
+}
