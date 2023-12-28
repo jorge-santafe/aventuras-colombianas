@@ -1,5 +1,6 @@
 .weather {
   margin-block: 2rem;
+
   &-info {
     text-align: center;
     margin-block-end: 1.5rem;
@@ -9,7 +10,7 @@
     gap: 1.5rem;
     grid-template-columns: 1fr;
     background-color: $primary;
-    padding: 1rem;
+    padding-block: 1rem;
     border-radius: 0.5rem;
     max-inline-size: 380px;
     margin: auto;
@@ -23,12 +24,14 @@
   }
   &-description-title {
     color: $white;
-    font: $headline-2;
+    font: $headline-3;
     text-align: center;
     margin-block-end: 1.5rem;
   }
   &-items {
     color: $gray10;
+    margin: 0;
+    padding-inline: 1.5rem;
     li {
       margin-block-end: 1rem;
       text-align: justify;

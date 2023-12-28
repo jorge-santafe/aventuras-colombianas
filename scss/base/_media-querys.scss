@@ -75,6 +75,14 @@
         text-align: end;
       }
     }
+    &-description {
+      h3 {
+        font: $headline-3;
+      }
+      p {
+        font: $base-font;
+      }
+    }
   }
   .weather {
     &-container {
@@ -83,6 +91,9 @@
     }
     &-image {
       display: block;
+    }
+    &-description-title {
+      font: $headline-2;
     }
   }
 }

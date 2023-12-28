@@ -24,12 +24,12 @@
     padding: 0.5rem;
     flex: 1;
     h3 {
-      font: $headline-3;
+      font: $base-font-bold;
       color: $primary;
       margin-block-start: 0;
     }
     p {
-      font: $base-font;
+      font: $font-sm;
       text-align: justify;
     }
   }

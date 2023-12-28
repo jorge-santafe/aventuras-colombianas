@@ -642,12 +642,12 @@ p {
   flex: 1;
 }
 .places-visit-description h3 {
-  font: 600 1.5rem/normal "Montserrat", sans-serif;
+  font: 600 1rem/normal "Montserrat", sans-serif;
   color: #191e3b;
   margin-block-start: 0;
 }
 .places-visit-description p {
-  font: 300 1rem/normal "Montserrat", sans-serif;
+  font: 300 0.875rem/normal "Montserrat", sans-serif;
   text-align: justify;
 }
 
@@ -663,7 +663,7 @@ p {
   gap: 1.5rem;
   grid-template-columns: 1fr;
   background-color: #191e3b;
-  padding: 1rem;
+  padding-block: 1rem;
   border-radius: 0.5rem;
   max-inline-size: 380px;
   margin: auto;
@@ -677,12 +677,14 @@ p {
 }
 .weather-description-title {
   color: #ffffff;
-  font: 600 2.25rem/normal "Montserrat", sans-serif;
+  font: 600 1.5rem/normal "Montserrat", sans-serif;
   text-align: center;
   margin-block-end: 1.5rem;
 }
 .weather-items {
   color: #f1f5f9;
+  margin: 0;
+  padding-inline: 1.5rem;
 }
 .weather-items li {
   margin-block-end: 1rem;
@@ -760,12 +762,21 @@ p {
     order: -1;
     text-align: end;
   }
+  .places-visit-description h3 {
+    font: 600 1.5rem/normal "Montserrat", sans-serif;
+  }
+  .places-visit-description p {
+    font: 300 1rem/normal "Montserrat", sans-serif;
+  }
   .weather-container {
     grid-template-columns: 380px 1fr;
     max-inline-size: 100%;
   }
   .weather-image {
     display: block;
+  }
+  .weather-description-title {
+    font: 600 2.25rem/normal "Montserrat", sans-serif;
   }
 }
 @media (width > 990px) {
