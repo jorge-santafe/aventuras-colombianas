@@ -96,6 +96,26 @@
       font: $headline-2;
     }
   }
+  .health {
+    max-inline-size: 100%;
+    &-image {
+      display: block;
+    }
+    &-title {
+      text-align: end;
+      font: $headline-3;
+    }
+  }
+  .visa {
+    max-inline-size: 100%;
+    &-image {
+      display: block;
+    }
+    &-title {
+      text-align: start;
+      font: $headline-3;
+    }
+  }
 }
 @media (width> 990px) {
   .navbar {

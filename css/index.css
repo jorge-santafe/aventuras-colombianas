@@ -694,6 +694,67 @@ p {
   font-weight: 600;
 }
 
+.health {
+  display: flex;
+  gap: 1rem;
+  margin-block-end: 1.5rem;
+  flex-direction: row-reverse;
+  background-color: #f1f5f9;
+  border-radius: 0.5rem;
+  max-inline-size: 23.75rem;
+  margin: auto;
+  overflow: hidden;
+  margin-block-end: 2rem;
+}
+.health-cotainer {
+  padding: 1rem;
+}
+.health-image {
+  inline-size: 18.75rem;
+  display: none;
+}
+.health-title {
+  text-align: center;
+  margin-block-end: 1rem;
+}
+.health-info {
+  text-align: justify;
+  font: 300 1rem/normal "Montserrat", sans-serif;
+  margin-block-start: 0;
+}
+
+.visa {
+  display: flex;
+  gap: 1rem;
+  margin-block-end: 1.5rem;
+  background-color: #f1f5f9;
+  border-radius: 0.5rem;
+  max-inline-size: 23.75rem;
+  margin: auto;
+  overflow: hidden;
+  margin-block-end: 2rem;
+}
+.visa-container {
+  padding: 1rem;
+}
+.visa-image {
+  display: none;
+  inline-size: 18.75rem;
+}
+.visa-info {
+  text-align: justify;
+  font: 300 1rem/normal "Montserrat", sans-serif;
+}
+.visa-title {
+  text-align: center;
+  margin-block-end: 1rem;
+}
+.visa-link {
+  text-decoration: underline;
+  color: #191e3b;
+  font: 300 1rem/normal "Montserrat", sans-serif;
+}
+
 @media (width > 768px) {
   .hero {
     block-size: 37.5rem;
@@ -777,6 +838,26 @@ p {
   }
   .weather-description-title {
     font: 600 2.25rem/normal "Montserrat", sans-serif;
+  }
+  .health {
+    max-inline-size: 100%;
+  }
+  .health-image {
+    display: block;
+  }
+  .health-title {
+    text-align: end;
+    font: 600 1.5rem/normal "Montserrat", sans-serif;
+  }
+  .visa {
+    max-inline-size: 100%;
+  }
+  .visa-image {
+    display: block;
+  }
+  .visa-title {
+    text-align: start;
+    font: 600 1.5rem/normal "Montserrat", sans-serif;
   }
 }
 @media (width > 990px) {

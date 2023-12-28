@@ -1,0 +1,59 @@
+.health {
+  display: flex;
+  gap: 1rem;
+  margin-block-end: 1.5rem;
+  flex-direction: row-reverse;
+  background-color: $gray10;
+  border-radius: 0.5rem;
+  max-inline-size: 23.75rem;
+  margin: auto;
+  overflow: hidden;
+  margin-block-end: 2rem;
+  &-cotainer {
+    padding: 1rem;
+  }
+  &-image {
+    inline-size: 18.75rem;
+    display: none;
+  }
+  &-title {
+    text-align: center;
+    margin-block-end: 1rem;
+  }
+  &-info {
+    text-align: justify;
+    font: $base-font;
+    margin-block-start: 0;
+  }
+}
+.visa {
+  display: flex;
+  gap: 1rem;
+  margin-block-end: 1.5rem;
+  background-color: $gray10;
+  border-radius: 0.5rem;
+  max-inline-size: 23.75rem;
+  margin: auto;
+  overflow: hidden;
+  margin-block-end: 2rem;
+  &-container {
+    padding: 1rem;
+  }
+  &-image {
+    display: none;
+    inline-size: 18.75rem;
+  }
+  &-info {
+    text-align: justify;
+    font: $base-font;
+  }
+  &-title {
+    text-align: center;
+    margin-block-end: 1rem;
+  }
+  &-link {
+    text-decoration: underline;
+    color: $primary;
+    font: $base-font;
+  }
+}
