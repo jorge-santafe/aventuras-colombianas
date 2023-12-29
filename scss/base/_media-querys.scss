@@ -93,7 +93,7 @@
       display: block;
     }
     &-description-title {
-      font: $headline-2;
+      font: $headline-3;
     }
   }
   .health {
@@ -114,6 +114,18 @@
     &-title {
       text-align: start;
       font: $headline-3;
+    }
+  }
+  .currency-form {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr) auto 1fr;
+    max-inline-size: 100%;
+    &-label {
+      .hidden {
+        display: block;
+        block-size: 1rem;
+      }
     }
   }
 }

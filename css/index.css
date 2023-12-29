@@ -755,6 +755,62 @@ p {
   font: 300 1rem/normal "Montserrat", sans-serif;
 }
 
+.currency-converter {
+  margin-block-start: 2rem;
+  margin-block-end: 4rem;
+}
+
+.currency-form {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-inline-size: 23.75rem;
+  margin: auto;
+}
+.currency-form-label span {
+  display: block;
+  color: #191e3b;
+  font: 600 1rem/normal "Montserrat", sans-serif;
+}
+.currency-form-label .hidden {
+  display: none;
+}
+.currency-form-label input,
+.currency-form-label select {
+  flex: 1;
+  inline-size: 100%;
+  box-sizing: border-box;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: #f5f5f5;
+  color: #757787;
+}
+.currency-form-swap {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 1.8rem;
+  block-size: 1.8rem;
+  border-radius: 100%;
+}
+.currency-form-swap i {
+  font-size: 1rem;
+}
+.currency-form-submit {
+  grid-column: 2/3;
+  color: #ffffff;
+  background: #191e3b;
+  border: none;
+  font: 600 1rem/normal "Montserrat", sans-serif;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-block-start: 1rem;
+}
+
 @media (width > 768px) {
   .hero {
     block-size: 37.5rem;
@@ -837,7 +893,7 @@ p {
     display: block;
   }
   .weather-description-title {
-    font: 600 2.25rem/normal "Montserrat", sans-serif;
+    font: 600 1.5rem/normal "Montserrat", sans-serif;
   }
   .health {
     max-inline-size: 100%;
@@ -858,6 +914,16 @@ p {
   .visa-title {
     text-align: start;
     font: 600 1.5rem/normal "Montserrat", sans-serif;
+  }
+  .currency-form {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr) auto 1fr;
+    max-inline-size: 100%;
+  }
+  .currency-form-label .hidden {
+    display: block;
+    block-size: 1rem;
   }
 }
 @media (width > 990px) {

@@ -1,0 +1,56 @@
+.currency-converter {
+  margin-block-start: 2rem;
+  margin-block-end: 4rem;
+}
+.currency-form {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-inline-size: 23.75rem;
+  margin: auto;
+  &-label {
+    span {
+      display: block;
+      color: $primary;
+      font: $base-font-bold;
+    }
+    .hidden {
+      display: none;
+    }
+    input,
+    select {
+      flex: 1;
+      inline-size: 100%;
+      box-sizing: border-box;
+      padding-block: 0.5rem;
+      padding-inline: 0.5rem;
+      border-radius: 0.5rem;
+      border: none;
+      outline: none;
+      background-color: $grayInput;
+      color: $gray20;
+    }
+  }
+  &-swap {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inline-size: 1.8rem;
+    block-size: 1.8rem;
+    border-radius: 100%;
+    i {
+      font-size: 1rem;
+    }
+  }
+  &-submit {
+    grid-column: 2/3;
+    color: $white;
+    background: $primary;
+    border: none;
+    font: $base-font-bold;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-block-start: 1rem;
+  }
+}
