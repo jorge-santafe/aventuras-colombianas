@@ -811,6 +811,46 @@ p {
   margin-block-start: 1rem;
 }
 
+.our-agency {
+  margin-block: 2rem;
+}
+.our-agency-description {
+  text-align: center;
+  font: 300 1rem/normal "Montserrat", sans-serif;
+}
+.our-agency-description strong {
+  color: #191e3b;
+  font-weight: 400;
+}
+.our-agency-container {
+  margin-block-start: 2rem;
+  display: grid;
+  background-color: #191e3b;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.our-agency-container-info-colombia {
+  padding: 1rem;
+  align-self: center;
+}
+.our-agency-container-info-colombia h3 {
+  color: #ffffff;
+  font: 600 1.5rem/normal "Montserrat", sans-serif;
+  text-align: center;
+}
+.our-agency-container-info-colombia p {
+  font: 300 1rem/normal "Montserrat", sans-serif;
+  color: #f1f5f9;
+  text-align: justify;
+}
+.our-agency-container iframe {
+  inline-size: 100%;
+  block-size: 250px;
+}
+.our-agency-footer {
+  margin-block-start: 4rem;
+}
+
 @media (width > 768px) {
   .hero {
     block-size: 37.5rem;
@@ -924,6 +964,13 @@ p {
   .currency-form-label .hidden {
     display: block;
     block-size: 1rem;
+  }
+  .our-agency-container {
+    block-size: 350px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .our-agency-container iframe {
+    block-size: 100%;
   }
 }
 @media (width > 990px) {

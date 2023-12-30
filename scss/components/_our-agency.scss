@@ -1,0 +1,39 @@
+.our-agency {
+  margin-block: 2rem;
+  &-description {
+    text-align: center;
+    font: $base-font;
+    strong {
+      color: $primary;
+      font-weight: 400;
+    }
+  }
+  &-container {
+    margin-block-start: 2rem;
+    display: grid;
+    background-color: $primary;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    &-info-colombia {
+      padding: 1rem;
+      align-self: center;
+      h3 {
+        color: $white;
+        font: $headline-3;
+        text-align: center;
+      }
+      p {
+        font: $base-font;
+        color: $gray10;
+        text-align: justify;
+      }
+    }
+    iframe {
+      inline-size: 100%;
+      block-size: 250px;
+    }
+  }
+  &-footer {
+    margin-block-start: 4rem;
+  }
+}
