@@ -2,10 +2,37 @@
   margin-block: 2rem;
   &-info {
     text-align: center;
+    margin-block-end: 2rem;
   }
   &-email {
     color: $primary;
     text-decoration: underline;
     text-underline-offset: 8px;
+  }
+  &-form {
+    display: grid;
+    gap: 1.5rem;
+
+    input {
+      inline-size: 100%;
+      box-sizing: border-box;
+      background: $grayInput;
+      border: none;
+      border-radius: 0.25rem;
+      padding-block: 0.5rem;
+      padding-inline: 0.75rem;
+      outline: none;
+      &:focus,
+      &:focus-within {
+        outline: 1px solid $primary;
+      }
+      &[type='submit'] {
+        background: $primary;
+        color: $white;
+        font: $base-font-bold;
+        line-height: 1.5;
+        vertical-align: middle;
+      }
+    }
   }
 }

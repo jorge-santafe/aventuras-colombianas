@@ -138,6 +138,20 @@
       }
     }
   }
+  .contact {
+    &-form {
+      grid-template-columns: repeat(2, 1fr);
+      input[type='submit'] {
+        grid-column: 1/-1;
+        max-inline-size: 25rem;
+        justify-self: center;
+        margin-block-start: 0.5rem;
+        &:active {
+          transform: scale(0.95);
+        }
+      }
+    }
+  }
 }
 @media (width> 990px) {
   .navbar {
