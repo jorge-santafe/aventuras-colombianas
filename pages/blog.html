@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="viajes,tours,colombia,aventura,turismo,lugares">
+    <meta name="description"
+        content="Encuentra toda la información que necesitas saber, antes de viajar a nuestro maravilloso país.">
+    <link rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Aventuras Colombianas</title>
+</head>
+
+<body>
+    <header class="header">
+        <a class="header-logo" href="/" aria-current="page" title="Logo Aventuras Colombianas">
+            <img src="../images/logo.png" width="32" height="32" alt="logo" title="Aventuras Colombianas">
+            <div aria-label="Aventuras Colombianas Logo">
+                <span>Aventuras</span>
+                <span>Colombianas</span>
+            </div>
+        </a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link  my-md-2 mx-lg-2" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  my-md-2  mx-lg-2" href="./nuestros-viajes.html">Nuestros
+                                    Viajes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  my-md-2 mx-lg-2" href="./guia-de-viajes.html">Guía de Viajes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link my-md-2 mx-lg-2" href="./nuestra-agencia.html">Nuestra Agencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active my-md-2 mx-lg-2" href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container grid-page">
+            <aside class="aside">
+                <div class="filters">
+                    <div class="filters-section filter-section-search">
+                        <h3 class="filters-subtitle">Buscar:</h3>
+                        <form class="filters-form-search" action="">
+                            <label for="search">
+                                <input type="text" name="search" id="search" placeholder="post">
+                            </label>
+                            <button type="submit" aria-label="boton de busqueda">
+                                <i class="bi bi-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="filters-section" aria-label="Filtar por plan">
+                        <p class="filters-subtitle">Categorías:</p>
+                        <form class="filter-categories-menu" action="">
+                            <label>
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="Aventura"
+                                    aria-label="Aventura">
+                                <span class="filter-categories-menu-item">Aventura</span>
+                            </label>
+                            <label>
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="Arte"
+                                    aria-label="Arte">
+                                <span class="filter-categories-menu-item">Arte</span>
+                            </label>
+                            <label>
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="Senderismo"
+                                    aria-label="Senderismo">
+                                <span class="filter-categories-menu-item">Senderismo</span>
+                            </label>
+                            <label>
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="Playas"
+                                    aria-label="Playas">
+                                <span class="filter-categories-menu-item">Playas</span>
+                            </label>
+                            <label>
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="Agroturismo"
+                                    aria-label="Agroturismo">
+                                <span class="filter-categories-menu-item">Agroturismo</span>
+                            </label>
+                            <label>
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="Agroturismo"
+                                    aria-label="Agroturismo">
+                                <span class="filter-categories-menu-item">Cultural</span>
+                            </label>
+                            <label>
+                                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="Familiar"
+                                    aria-label="Familiar">
+                                <span class="filter-categories-menu-item">Familiar</span>
+                            </label>
+                        </form>
+
+                    </div>
+                    <div class="filters-section" aria-label="Social Media">
+                        <p class="filters-subtitle">Redes sociales</p>
+                        <div class="filters-social">
+                            <a href="" aria-label="facebook">
+                                <i class="bi bi-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="" aria-label="instagram">
+                                <i class="bi bi-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="" aria-label="whastapp">
+                                <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                            </a>
+                            <a href="" aria-label="tiktok">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+
+            </aside>
+            <main class="main">
+                <section class="blogpost" aria-label="blogpost">
+                    <h1 class="blogpost-title headline2">Encuentra información sobre Colombia</h1>
+                    <div class="blogpost-container">
+                        <div class="blogpost-card">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Cabo_San_Juan%2C_Colombia.jpg"
+                                alt="">
+                            <div class="blogpost-card-info">
+                                <div class="blogpost-card-info-top">
+                                    <a>
+                                        <img src="../images/user.png" alt="user" title="jorge santafe">
+                                        <span>Jorge Santafe</span>
+                                    </a>
+                                    <time datetime="2024-01-10" aria-label="Miercoles 10 de enero">
+                                        10 de enero 2024
+                                    </time>
+                                </div>
+                                <div class="blogpost-card-info-description">
+                                    <h3>Parque tayrona</h3>
+                                    <p>Ubicado en la majestuosa Sierra Nevada de Santa Marta, el Parque Tayrona es una
+                                        joya
+                                        natural de Colombia que atrae a visitantes de todo el mundo</p>
+                                    <a href="">Leer más.</a>
+                                </div>
+                                <div class="blogpost-card-categories">
+                                    <span class="aventura">Aventura</span>
+                                    <span class="playa">Playa</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blogpost-card">
+                            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/408917967.jpg?k=b555f47d45663a87d66eb9af3952260d95d2ceb2faad6a35ce5d2f0e1beff849&o=&hp=1"
+                                alt="Minca selva colombiana">
+                            <div class="blogpost-card-info">
+                                <div class="blogpost-card-info-top">
+                                    <a>
+                                        <img src="../images/user.png" alt="user" title="jorge santafe">
+                                        <span>Jorge Santafe</span>
+                                    </a>
+                                    <time datetime="2024-01-9" aria-label="Martes 9 de enero">
+                                        9 de enero 2024
+                                    </time>
+                                </div>
+                                <div class="blogpost-card-info-description">
+                                    <h3>Minca Colombia en este 2024: Un Paraíso Escondido en Santa Marta
+                                    </h3>
+                                    <p>Minca, Colombia es una joya escondida en la majestuosa Sierra Nevada de Santa
+                                        Marta. Este pequeño pueblo, conocido por su impresionante naturaleza y cultivo
+                                        de</p>
+                                    <a href="">Leer más.</a>
+                                </div>
+                                <div class="blogpost-card-categories">
+                                    <span class="aventura">Aventura</span>
+                                    <span class="playa">Senderismo</span>
+                                    <span class="playa">Familiar</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blogpost-card">
+                            <img src="https://cnnespanol.cnn.com/wp-content/uploads/2015/12/151201102020-colombia-desert-hammocks-exlarge-169.jpg?quality=100&strip=info&w=320&h=240&crop=1"
+                                alt="La Guajira">
+                            <div class="blogpost-card-info">
+                                <div class="blogpost-card-info-top">
+                                    <a>
+                                        <img src="../images/user.png" alt="user" title="jorge santafe">
+                                        <span>Jorge Santafe</span>
+                                    </a>
+                                    <time datetime="2024-01-9" aria-label="Martes 9 de enero">
+                                        8 de enero 2024
+                                    </time>
+                                </div>
+                                <div class="blogpost-card-info-description">
+                                    <h3>Descubriendo la Belleza de Cabo de la Vela y Punta Gallinas en La Guajira
+
+                                    </h3>
+                                    <p>En el extremo norte de América del Sur, en la península de La Guajira, se
+                                        encuentran dos de los lugares más impactantes y bellos </p>
+                                    <a href="">Leer más.</a>
+                                </div>
+                                <div class="blogpost-card-categories">
+                                    <span class="aventura">Arte</span>
+                                    <span class="aventura">Aventura</span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blogpost-card">
+                            <img src="https://www.travelers.com.co/assets/cache/uploads/cali/cali-2023/fachada/1300x868/travelers-castellon-de-juanambu-cali-08-1681142327.jpg"
+                                alt="Minca selva colombiana">
+                            <div class="blogpost-card-info">
+                                <div class="blogpost-card-info-top">
+                                    <a href="">
+                                        <img src="../images/user.png" alt="user" title="jorge santafe">
+                                        <span>Jorge Santafe</span>
+                                    </a>
+                                    <time datetime="2024-01-7" aria-label="Martes 9 de enero">
+                                        7 de enero 2024
+                                    </time>
+                                </div>
+                                <div class="blogpost-card-info-description">
+                                    <h3>5 Razones para visitar Cali Colombia
+                                    </h3>
+                                    <p>Colombia, conocida por su rica cultura, paisajes impresionantes y acogedora
+                                        población, ha sido durante mucho tiempo un destino atractivo para turistas de
+                                        todo el mundo.</p>
+                                    <a href="">Leer más.</a>
+                                </div>
+                                <div class="blogpost-card-categories">
+                                    <span class="aventura">Arte</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blogpost-card">
+                            <img src="../images/santa-marta.webp" alt="Santa Marta">
+                            <div class="blogpost-card-info">
+                                <div class="blogpost-card-info-top">
+                                    <a>
+                                        <img src="../images/user.png" alt="user" title="jorge santafe">
+                                        <span>Jorge Santafe</span>
+                                    </a>
+                                    <time datetime="2024-01-11" aria-label="Jueves 11 de enero">
+                                        11 de enero 2024
+                                    </time>
+                                </div>
+                                <div class="blogpost-card-info-description">
+                                    <h3>¿Qué hacer en Santa Marta Colombia? 18 actividades imperdibles
+                                    </h3>
+                                    <p>Con su mezcla cautivadora de playas caribeñas, biodiversidad exuberante y riqueza
+                                        histórica, la ciudad de Santa Marta se presenta como un lienzo de aventuras </p>
+                                    <a href="">Leer más.</a>
+                                </div>
+                                <div class="blogpost-card-categories">
+                                    <span class="aventura">Senderismo</span>
+                                    <span class="aventura">Playas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blogpost-card">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/24/f8/35/basilica-de-nuestro-senor.jpg?w=300&h=300&s=1"
+                                alt="Minca selva colombiana">
+                            <div class="blogpost-card-info">
+                                <div class="blogpost-card-info-top">
+                                    <a>
+                                        <img src="../images/user.png" alt="user" title="jorge santafe">
+                                        <span>Jorge Santafe</span>
+                                    </a>
+                                    <time datetime="2024-01-10" aria-label="Martes 9 de enero">
+                                        10 de enero 2024
+                                    </time>
+                                </div>
+                                <div class="blogpost-card-info-description">
+                                    <h3>El encanto del Valle del Cauca: Un viaje inolvidable
+                                    </h3>
+                                    <p>El Valle del Cauca, ubicado en el suroeste, es uno de los 32 departamentos de
+                                        Colombia. Este es uno de los destinos más variados </p>
+                                    <a href="">Leer más.</a>
+                                </div>
+                                <div class="blogpost-card-categories">
+                                    <span class="aventura">Senderismo</span>
+                                    <span class="aventura">Cultural</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

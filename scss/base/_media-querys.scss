@@ -184,4 +184,24 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
+  //Blog
+  .blogpost {
+    &-card {
+      margin: 0;
+      max-inline-size: 100%;
+      grid-template-columns: auto 1fr;
+
+      img {
+        inline-size: 18.75rem;
+      }
+      &-info {
+        padding: 1rem;
+      }
+      &-info-top {
+        img {
+          inline-size: 1.5rem;
+        }
+      }
+    }
+  }
 }

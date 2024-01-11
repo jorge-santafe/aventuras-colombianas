@@ -92,3 +92,53 @@
     }
   }
 }
+// Filter form search
+.filter-section-search {
+  margin-block-start: 1rem;
+}
+.filters-form-search {
+  display: flex;
+  gap: 0.5rem;
+  padding-inline-start: 0.15rem;
+  margin-block-start: 1rem;
+  label {
+    inline-size: 100%;
+  }
+  input {
+    display: block;
+    inline-size: inherit;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: $grayInput;
+    padding-inline: 0.5rem;
+    padding-block: 0.25rem;
+    font: $font-sm;
+    color: $gray20;
+    box-sizing: border-box;
+    &:focus {
+      outline: 1px solid $primary;
+    }
+  }
+  button {
+    border: none;
+    background-color: $primary;
+    color: $white;
+    border-radius: 0.25rem;
+  }
+}
+// Filter social
+.filters-social {
+  display: flex;
+  justify-content: space-between;
+  a {
+    background-color: $primary;
+    display: block;
+    padding-block: 0.25rem;
+    padding-inline: 0.5rem;
+    border-radius: 0.25rem;
+  }
+  i {
+    font-size: 1.2rem;
+    color: $white;
+  }
+}
